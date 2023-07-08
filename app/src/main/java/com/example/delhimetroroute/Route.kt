@@ -966,6 +966,12 @@ class RouteAndFair : AppCompatActivity() {
             var newDist = 0
             pq.remove(f)
 
+            //break as soon as shortest path to destination is found
+
+            if(node == dest){
+                break
+            }
+
             for(i in 0 until adj[node].size){
 
                 var changeLine = 0
