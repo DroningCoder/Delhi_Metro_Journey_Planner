@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/thumb_delhi_metroi_440_851" />
+
+    <TextView
+        android:id="@+id/dmrc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/imageView3"
+        android:text="DMRC"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dmrc"
+        app:srcCompat="@drawable/tuxpi_com_1688471517__1_" />
+
+    <AutoCompleteTextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:hint="Select Source Station"
+        android:completionThreshold="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/source"
+        android:layout_centerHorizontal="true"
+        android:completionThreshold="1"
+        android:layout_marginTop="20dp"
+        android:hint="Select Destination Station" />
+
+    <Button
+        android:id="@+id/showbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Show Shortest Route"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/showbutton"
+        android:layout_marginTop="20dp"
+        android:text="Exit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_below="@+id/exit"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="ⒸDesigned and Developed by: Aryan Bhatia"
+        />
+
+
+</RelativeLayout>
+

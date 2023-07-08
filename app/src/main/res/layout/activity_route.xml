@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteAndFair">
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="From: "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/olivine"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/from"
+        android:background="@color/silver"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="To: "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/olivine"
+        android:padding="3dp"
+        android:layout_below="@+id/from"
+        />
+
+    <TextView
+        android:id="@+id/to_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:background="@color/silver"
+        android:padding="3dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/to"
+        android:layout_below="@+id/from_text"
+        />
+
+    <TextView
+        android:id="@+id/noOfStations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/olivine"
+        android:layout_below="@+id/to"
+        android:text="Number Of Stations: "
+        />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/noOfStations"
+        android:background="@color/silver"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/suggestedRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noOfStations"
+        android:background="@color/olivine"
+        android:text="Suggested Route:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        />
+
+    <ListView
+        android:id="@+id/mylistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestedRoute"/>
+
+</RelativeLayout>
